@@ -36,7 +36,7 @@
             background-color: #ffb6b9;
             color: white;
             text-align: center;
-            padding: 160px 0 50px 0;
+            padding: 160px 20px 50px 20px;
             font-size: 2.5em;
             font-weight: bold;
             letter-spacing: 2px;
@@ -44,6 +44,9 @@
 
         .container {
             padding: 50px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .balloon {
@@ -66,16 +69,71 @@
 
         .balloon:nth-child(odd) {
             background-color: #fb6f92;
-            left: 20%;
+            align-self: flex-start;
+            margin-left: 20%;
         }
 
         .balloon:nth-child(even) {
             background-color: #ff8fab;
-            left: 60%;
+            align-self: flex-end;
+            margin-right: 20%;
         }
 
         .balloon:hover {
             transform: scale(1.1);
+        }
+
+        /* Media queries para pantallas más pequeñas */
+        @media (max-width: 768px) {
+            header {
+                font-size: 2em;
+                padding: 120px 20px 30px 20px;
+            }
+
+            .navbar {
+                font-size: 1.2em;
+                height: 50px;
+            }
+
+            .balloon {
+                width: 150px;
+                height: 150px;
+                font-size: 1em;
+                margin: 30px 0;
+            }
+
+            .balloon:nth-child(odd),
+            .balloon:nth-child(even) {
+                margin-left: 0;
+                margin-right: 0;
+                align-self: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                font-size: 1.5em;
+                padding: 100px 20px 20px 20px;
+            }
+
+            .navbar {
+                font-size: 1em;
+                height: 40px;
+            }
+
+            .balloon {
+                width: 120px;
+                height: 120px;
+                font-size: 0.9em;
+                margin: 20px 0;
+            }
+
+            .balloon:nth-child(odd),
+            .balloon:nth-child(even) {
+                margin-left: 0;
+                margin-right: 0;
+                align-self: center;
+            }
         }
     </style>
 </head>
