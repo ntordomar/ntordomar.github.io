@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suerte en tu cuarto día</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2d1d1;
+            overflow-x: hidden;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #b5838d;
+            color: white;
+            width: 100%;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+            font-weight: bold;
+            z-index: 1000;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            background-color: #ffb6b9;
+            color: white;
+            text-align: center;
+            padding: 160px 20px 50px 20px;
+            font-size: 2.5em;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .container {
+            padding: 50px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .balloon {
+            background-color: #f3a6a6;
+            color: white;
+            padding: 20px;
+            border-radius: 50%;
+            width: 175px;
+            height: 175px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 1.2em;
+            margin: 40px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            position: relative;
+        }
+
+        .balloon:nth-child(odd) {
+            background-color: #fb6f92;
+            align-self: flex-start;
+            margin-left: 20%;
+        }
+
+        .balloon:nth-child(even) {
+            background-color: #ff8fab;
+            align-self: flex-end;
+            margin-right: 20%;
+        }
+
+        .balloon:hover {
+            transform: scale(1.1);
+        }
+
+        /* Media queries para pantallas más pequeñas */
+        @media (max-width: 768px) {
+            header {
+                font-size: 2em;
+                padding: 120px 20px 30px 20px;
+            }
+
+            .navbar {
+                font-size: 1.2em;
+                height: 50px;
+            }
+
+            .balloon {
+                width: 150px;
+                height: 150px;
+                font-size: 1em;
+                margin: 30px 0;
+            }
+
+            .balloon:nth-child(odd),
+            .balloon:nth-child(even) {
+                margin-left: 0;
+                margin-right: 0;
+                align-self: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                font-size: 1.5em;
+                padding: 100px 20px 20px 20px;
+            }
+
+            .navbar {
+                font-size: 1em;
+                height: 40px;
+            }
+
+            .balloon {
+                width: 120px;
+                height: 120px;
+                font-size: 0.9em;
+                margin: 20px 0;
+            }
+
+            .balloon:nth-child(odd),
+            .balloon:nth-child(even) {
+                margin-left: 0;
+                margin-right: 0;
+                align-self: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">Cenáculo 2025</div>
+
+<header>
+    ¡Suerte en tu cuarto día!
+</header>
+
+<div class="container">
+    <div class="balloon">¡Eres capaz de todo!</div>
+    <div class="balloon">Confía en tu potencial</div>
+    <div class="balloon">Cada día es una nueva oportunidad</div>
+    <div class="balloon">¡Tienes todo lo necesario para triunfar!</div>
+    <div class="balloon">Aprende algo nuevo hoy</div>
+    <div class="balloon">El éxito está en el esfuerzo</div>
+    <div class="balloon">Tu esfuerzo vale la pena</div>
+    <div class="balloon">¡Sigue adelante, no te detengas!</div>
+    <div class="balloon">La perseverancia es clave</div>
+    <div class="balloon">¡Hazlo con pasión!</div>
+</div>
+
+</body>
+</html>
