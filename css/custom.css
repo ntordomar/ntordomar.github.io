@@ -618,6 +618,9 @@ img::-moz-selection {
 /*** Service ***/
 .service-item {
     transition: .5s;
+    padding-bottom: 0.3em !important;
+    display: flex;
+    flex-direction: column;
 }
 
 .service-item:hover {
@@ -892,4 +895,69 @@ img::-moz-selection {
     align-items: center;
     gap: 2em;
     margin-bottom: 2em;;
+}
+.author{
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    margin-top: auto;
+}
+.author-text{
+    color:#dee4ee;
+    font-weight: bold;
+}
+
+.click-div{
+    
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    background-color: rgb(248 236 227);
+    margin: 5em;
+    margin-bottom: 0;
+}
+
+.clickMeButton {
+    bottom: 20px;
+    width: 80px;
+    height: 80px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.clickMeButton:hover {
+    background-color: #218838;
+}
+
+.spotify-button button {
+    background-color: #1DB954;
+    border: none;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.spotify-button button:hover {
+    background-color: #1aa34a;
+}
+
+.spotify-button img {
+    width: 60px;
+    height: 60px;
+}
+
+.spotify-button p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
 }
